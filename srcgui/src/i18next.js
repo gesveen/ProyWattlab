@@ -21,12 +21,47 @@ i18n
     // init i18next
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
-        fallbackLng: 'en',
+        lng: 'es',
+        resources: {
+            en: {
+                translation: {
+                    login: 'Log In',
+                    logout: "Log Out",
+                    consult_bill: "Check your bill",
+                    information: "Information",
+                    pqrs: "Petitions, requests, complaints and claims"
+                },
+            },
+            es: {
+                translation: {
+                    login: 'Iniciar sesión',
+                    logout: "Cerrar sesión",
+                    consult_bill: "Consulta tu factura",
+                    information: "Información",
+                    pqrs: "Peticiones, quejas y reclamos"
+                },
+            },
+            pt: {
+                translation: {
+                    login: 'Iniciar sessão',
+                    logout: "Fechar sessão",
+                    consult_bill: "Verifique sua conta",
+                    information: "Informação",
+                    pqrs: "Petições, solicitações, reclamações e reclamações"
+                },
+            },
+        },
+        fallbackLng: "en",
         debug: true,
         whitelist: Language, 
 
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
+            formatSeparator: ","
+        },
+
+        react: {
+            wait: true
         }
     });
 

@@ -11,7 +11,7 @@ class Menu extends Component {
         const { t } = this.props;
 
         return (
-            <Layout className="layout">
+
                 <div className="container">
                     <header >
                         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-ligth">
@@ -26,16 +26,6 @@ class Menu extends Component {
                         </nav>
                     </header>
                 </div>
-                
-                <div>
-                    <Content style={{ padding: '0 50px', marginTop: 70 }}>
-                        <Slides /> 
-                    </Content>
-                </div>
-                   
-                <Footer/>
-
-            </Layout>
 
         );
     }

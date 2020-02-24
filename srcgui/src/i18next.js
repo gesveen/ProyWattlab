@@ -29,7 +29,11 @@ i18n
                     logout: "Log Out",
                     consult_bill: "Check your bill",
                     information: "Information",
-                    pqrs: "Petitions, requests, complaints and claims"
+                    pqrs: "Petitions, requests, complaints and claims",
+                    spanish: 'Spanish',
+                    english: 'English',
+                    portuguese: 'Portuguese',
+                    language: 'Language'
                 },
             },
             es: {
@@ -38,7 +42,11 @@ i18n
                     logout: "Cerrar sesión",
                     consult_bill: "Consulta tu factura",
                     information: "Información",
-                    pqrs: "Peticiones, quejas y reclamos"
+                    pqrs: "Peticiones, quejas y reclamos",
+                    spanish: 'Español',
+                    english: 'Inglés',
+                    portuguese: 'Portugués',
+                    language: 'Idioma'
                 },
             },
             pt: {
@@ -47,7 +55,11 @@ i18n
                     logout: "Fechar sessão",
                     consult_bill: "Verifique sua conta",
                     information: "Informação",
-                    pqrs: "Petições, solicitações, reclamações e reclamações"
+                    pqrs: "Petições, solicitações, reclamações e reclamações",
+                    spanish: 'Espanhol',
+                    english: 'Inglês',
+                    portuguese: 'Português',
+                    language: 'Linguagem'
                 },
             },
         },

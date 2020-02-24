@@ -1,16 +1,24 @@
 import React from 'react';
+import { Carousel } from 'antd';
+import './style/slides.css';
 
 class Slides extends React.Component {
-    
     render() {
-        const { t } = this.props;
-
         return (
-            
-            <div style={{marginTop: '100px'}}>
-                <a>slides aquí</a>
-            </div>
-
+            <Carousel autoplay>
+                <div>
+                    <h3>1</h3>
+                </div>
+                <div>
+                    <h3>2</h3>
+                </div>
+                <div>
+                    <h3>3</h3>
+                </div>
+                <div>
+                    <h3>4</h3>
+                </div>
+            </Carousel>
         );
     }
 }

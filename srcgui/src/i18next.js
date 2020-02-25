@@ -33,7 +33,8 @@ i18n
                     spanish: 'Spanish',
                     english: 'English',
                     portuguese: 'Portuguese',
-                    language: 'Language'
+                    language: 'Language',
+                    click_here: 'Click here'
                 },
             },
             es: {
@@ -42,11 +43,12 @@ i18n
                     logout: "Cerrar sesión",
                     consult_bill: "Consulta tu factura",
                     information: "Información",
-                    pqrs: "Peticiones, quejas y reclamos",
+                    pqrs: "Peticiones, solicitudes, quejas y reclamos",
                     spanish: 'Español',
                     english: 'Inglés',
                     portuguese: 'Portugués',
-                    language: 'Idioma'
+                    language: 'Idioma',
+                    click_here: 'Click aquí'
                 },
             },
             pt: {
@@ -59,7 +61,8 @@ i18n
                     spanish: 'Espanhol',
                     english: 'Inglês',
                     portuguese: 'Português',
-                    language: 'Linguagem'
+                    language: 'Linguagem',
+                    click_here: 'Clique aqui'
                 },
             },
         },

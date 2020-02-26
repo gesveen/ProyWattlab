@@ -21,9 +21,9 @@ class Menu extends Component {
                                     {i18n.t('language')}
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="/?lng=es#">{i18n.t('spanish')}</a>
-                                    <a class="dropdown-item" href="/?lng=en#">{i18n.t('english')}</a>
-                                    <a class="dropdown-item" href="/?lng=pt#">{i18n.t('portuguese')}</a>
+                                    <a class="dropdown-item" href={window.location.href} href={window.location.href+"/?lng=es"}> {i18n.t('spanish')}</a>
+                                    <a class="dropdown-item" href={window.location.href+"/?lng=en"}>{i18n.t('english')}</a>
+                                    <a class="dropdown-item" href={window.location.href+"/?lng=pt"}>{i18n.t('portuguese')}</a>
                                 </div>
                             </div>
 

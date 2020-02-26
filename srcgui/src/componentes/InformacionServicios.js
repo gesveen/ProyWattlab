@@ -3,6 +3,8 @@ import React from 'react';
 import Menu from './Menu';
 import { Layout } from 'antd';
 import Footer from './Footer.js';
+import i18n from '../i18next';
+
 const { Content} = Layout;
 
 class InformacionServicios extends React.Component {
@@ -15,8 +17,8 @@ class InformacionServicios extends React.Component {
 
                 <section className="text-center">
                     <div className="container" style={{marginTop: 70, padding: '0px'}}>
-                        <h1 className="jumbotron-heading">Información - Portal de servicios</h1>
-                        <p className="lead text-muted">A continuación los servicios que ofrecemos</p>				      
+                    <h1 className="jumbotron-heading">{i18n.t('information')} - {i18n.t('service_portal')}</h1>
+                        <p className="lead text-muted">{i18n.t('service_portal_text')}</p>				      
                     </div>
                 </section>
 
@@ -27,10 +29,10 @@ class InformacionServicios extends React.Component {
                                 <div className="card mb-4 shadow-sm">
                                     <img src="../Productos_Servicios.jpg" alt="" width="100%" height="225" title="Bootstrap"></img>
                                     <div className="card-body">
-                                        <p className="card-text">Productos y servicios</p>
+                                        <p className="card-text">{i18n.t('products_and_services')}</p>
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="btn-group">
-                                                <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+                                                <button type="button" className="btn btn-sm btn-outline-success">Leer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -40,10 +42,10 @@ class InformacionServicios extends React.Component {
                                 <div className="card mb-4 shadow-sm">
                                     <img src="../Precios.jpg" alt="" width="100%" height="225" title="Bootstrap"></img>
                                     <div className="card-body">
-                                        <p className="card-text">Precios</p>
+                                        <p className="card-text">{i18n.t('prices')}</p>
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="btn-group">
-                                                <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+                                                <button type="button" className="btn btn-sm btn-outline-success">Leer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +62,7 @@ class InformacionServicios extends React.Component {
                                         <p className="card-text">Servicio 3</p>
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="btn-group">
-                                                <button type="button" className="btn btn-sm btn-outline-secondary">Leer</button>
+                                                <button type="button" className="btn btn-sm btn-outline-success">Leer</button>
                                             </div>
                                         </div>
                                     </div>

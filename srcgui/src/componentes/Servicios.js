@@ -1,5 +1,4 @@
 import React from 'react';
-//import './Slider.css';
 import i18n from 'i18next';
  
 class Servicios extends React.Component {

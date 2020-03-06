@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 import Menu from './componentes/Menu';
 import InformacionServicios from './componentes/InformacionServicios';
-import MenuInicio from './componentes/MenuInicio';
+import MenuInicio from './container/MenuInicio';
 import Login from './componentes/Login';
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
       <div className="App">
         <Menu/>
         <Switch>
-          <Route exact path="/home" component={MenuInicio} />
+          <Route exact path="/" component={MenuInicio} />
           <Route exact path="/InformacionServicios" component={InformacionServicios} />
           <Route exact path="/Login" component={Login} />
         </Switch>

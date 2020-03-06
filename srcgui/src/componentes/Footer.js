@@ -1,6 +1,5 @@
 import React from 'react';
 import i18n from '../i18next';
-import { Divider } from 'antd';
 
 class Footer extends React.Component {
     render() {

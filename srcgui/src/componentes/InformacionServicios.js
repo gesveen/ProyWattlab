@@ -5,7 +5,6 @@ import { Layout } from 'antd';
 import Footer from './Footer.js';
 import i18n from '../i18next';
 
-const { Content} = Layout;
 
 class InformacionServicios extends React.Component {
     render() {

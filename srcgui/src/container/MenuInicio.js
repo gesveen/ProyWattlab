@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Slides from './Slides.js';
-import Servicios from './Servicios';
-import Menu from './Menu';
+import Slides from '../componentes/Slides.js';
+import Servicios from '../componentes/Servicios.js';
+import Menu from '../componentes/Menu.js';
 import i18n from '../i18next';
 
 import { Layout } from 'antd';
-import Footer from './Footer.js';
+import Footer from '../componentes/Footer.js';
 const { Content} = Layout;
 
 class MenuInicio extends Component {
@@ -19,7 +19,7 @@ class MenuInicio extends Component {
                 </div>
                 
                 <div>
-                    <Content style={{ padding: '0 0px', marginTop: 70 }}>
+                    <Content style={{ padding: '0px 40px', marginTop: 70 }}>
                         <Slides /> 
                     </Content>
                 </div>

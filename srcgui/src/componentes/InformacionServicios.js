@@ -26,7 +26,7 @@ class InformacionServicios extends React.Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="card mb-4 shadow-sm">
-                                    <img src="../Productos_Servicios.jpg" alt="" width="100%" height="225" title="Bootstrap"></img>
+                                    <img src="../imagenes/Productos_Servicios.jpg" alt="" width="100%" height="225" title="Bootstrap"></img>
                                     <div className="card-body">
                                         <p className="card-text">{i18n.t('products_and_services')}</p>
                                         <div className="d-flex justify-content-between align-items-center">
@@ -39,7 +39,7 @@ class InformacionServicios extends React.Component {
                             </div>
                             <div className="col-md-4">
                                 <div className="card mb-4 shadow-sm">
-                                    <img src="../Precios.jpg" alt="" width="100%" height="225" title="Bootstrap"></img>
+                                        <img src="../imagenes/Precios.jpg" alt="" width="100%" height="225" title="Bootstrap"></img>
                                     <div className="card-body">
                                         <p className="card-text">{i18n.t('prices')}</p>
                                         <div className="d-flex justify-content-between align-items-center">

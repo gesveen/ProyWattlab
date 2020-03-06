@@ -1,0 +1,23 @@
+{
+    "translation": {
+         "login": "Log In",
+         "logout": "Log Out",
+         "info_login": "Enter with your data to the employees area, here you can perform more actions and know the movements of the users.",
+         "consult_bill": "Check your bill",
+         "consult_bill_text": "To check your statement, download or pay your bill...",
+         "information": "Information",
+         "information_text": "Information about products, services, prices, etc.",
+         "pqrs": "Petitions, requests, complaints and claims",
+         "pqrs_text": "PQRS section.",
+         "spanish": "Spanish",
+         "english": "English",
+         "portuguese": "Portuguese",
+         "language": "Language",
+         "click_here": "Click here",
+         "service_portal": "Service portal",
+          "service_portal_text": "Then the services we offer",
+          "products_and_services": "Products and services",
+          "prices": "Prices"
+        
+    }
+}

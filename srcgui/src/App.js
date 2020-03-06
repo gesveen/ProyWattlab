@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import 'antd/dist/antd.css';
 

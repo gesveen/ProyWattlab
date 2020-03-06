@@ -1,5 +1,5 @@
 import React from 'react';
-import i18n from '../i18next';
+import Text from 'antd/lib/typography/Text';
 
 class Footer extends React.Component {
     render() {

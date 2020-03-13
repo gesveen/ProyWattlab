@@ -1,0 +1,24 @@
+{
+        "translation": {
+            "login": "Iniciar sesión",
+            "logout": "Cerrar sesión",
+            "info_login": "Ingresa con tus datos a la zona de empleados, aquí puedes realizar más acciones y conocer los movimientos de los usuarios.",
+            "consult_bill": "Consulta tu factura",
+            "consult_bill_text": "Para consultar tu extrato, descargar o pagar tu factura...",
+            "information": "Información",
+            "information_text": "Información acerca de nuestros productos, servicios, precios, etc.",
+            "pqrs": "Peticiones, solicitudes, quejas y reclamos",
+            "pqrs_text": "Sección de PQRS.",
+            "language": "Idioma",
+            "spanish": "Español",
+            "english": "Inglés",
+            "portuguese": "Portugués",
+            "click_here": "Click aquí",
+            "service_portal": "Portal de servicios",
+            "service_portal_text": "A continuación los servicios que ofrecemos",
+            "products_and_services": "Productos y servicios",
+            "prices": "Precios"
+
+           
+    }
+}

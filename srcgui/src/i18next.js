@@ -6,8 +6,39 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // not like to use this?
 // have a look at the Quick start guide 
 // for passing in lng and translations on init
+import Entraduction from './translations/En-translations';
+import Estraduction from './translations/Es-translations';
+import Pttraduction from './translations/Pt-translations';
 
 const Language = ['es', 'en', 'pt']
+
+const options = {
+    // order and from where user language should be detected
+    order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+
+    // keys or params to lookup language from
+    lookupQuerystring: 'lng',
+    lookupCookie: 'i18next',
+    lookupLocalStorage: 'i18nextLng',
+    lookupFromPathIndex: 0,
+    lookupFromSubdomainIndex: 0,
+
+    // cache user language on
+    caches: ['localStorage', 'cookie'],
+    excludeCacheFor: ['cimode'], // languages to not persist (cookie, localStorage)
+
+    // optional expire and domain for set cookie
+    cookieMinutes: 10,
+    cookieDomain: 'myDomain',
+
+    // optional htmlTag with lang attribute, the default is:
+    htmlTag: document.documentElement,
+
+    // only detect languages that are in the whitelist
+    checkWhitelist: true
+}
+
+
 
 i18n
     // load translation using xhr -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
@@ -23,73 +54,15 @@ i18n
     .init({
         
         resources: {
-            en: {
-                translation: {
-                    login: 'Log In',
-                    logout: "Log Out",
-                    consult_bill: "Check your bill",
-                    consult_bill_text: "To check your statement, download or pay your bill...",
-                    information: "Information",
-                    information_text: "Information about products, services, prices, etc.",
-                    pqrs: "Petitions, requests, complaints and claims",
-                    pqrs_text: "PQRS section.",
-                    spanish: 'Spanish',
-                    english: 'English',
-                    portuguese: 'Portuguese',
-                    language: 'Language',
-                    click_here: 'Click here',
-                    service_portal: 'Service portal',
-                    service_portal_text: "Then the services we offer",
-                    products_and_services: "Products and services",
-                    prices: "Prices"
-                },
-            },
-            es: {
-                translation: {
-                    login: 'Iniciar sesión',
-                    logout: "Cerrar sesión",
-                    consult_bill: "Consulta tu factura",
-                    consult_bill_text: "Para consultar tu extrato, descargar o pagar tu factura...",
-                    information: "Información",
-                    information_text: "Información acerca de nuestros productos, servicios, precios, etc.",
-                    pqrs: "Peticiones, solicitudes, quejas y reclamos",
-                    pqrs_text: "Sección de PQRS.",
-                    spanish: 'Español',
-                    english: 'Inglés',
-                    portuguese: 'Portugués',
-                    language: 'Idioma',
-                    click_here: 'Click aquí',
-                    service_portal: 'Portal de servicios',
-                    service_portal_text: 'A continuación los servicios que ofrecemos',
-                    products_and_services: "Productos y servicios",
-                    prices: "Precios"
-                },
-            },
-            pt: {
-                translation: {
-                    login: 'Iniciar sessão',
-                    logout: "Fechar sessão",
-                    consult_bill: "Verifique sua conta",
-                    consult_bill_text: "Para verificar seu extrato, faça o download ou pague sua fatura...",
-                    information: "Informação",
-                    information_text: "Informações sobre produtos, serviços, preços, etc.",
-                    pqrs: "Petições, solicitações, reclamações e reclamações",
-                    pqrs_text: "Seção PQRS.",
-                    spanish: 'Espanhol',
-                    english: 'Inglês',
-                    portuguese: 'Português',
-                    language: 'Linguagem',
-                    click_here: 'Clique aqui',
-                    service_portal: 'Portal de serviço',
-                    service_portal_text: 'Abaixo dos serviços que oferecemos',
-                    products_and_services: "Produtos e serviços",
-                    prices: 'Preços'
-                },
-            },
+            en: Entraduction,
+            es: Estraduction,
+            pt: Pttraduction
         },
+
         fallbackLng: "en",
         debug: true,
         whitelist: Language, 
+        detection: options,
 
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default

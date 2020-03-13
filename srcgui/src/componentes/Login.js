@@ -5,7 +5,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 import './style/recaptcha.css';
 
 import { Layout, AutoComplete } from 'antd';
-const { Content} = Layout;
 
 function onChange(value) {
     console.log("Captcha value:", value);
@@ -19,14 +18,14 @@ class Login extends React.Component {
                 <main role="main" className="flex-shrink-0 mt-5">
                     <div className="row">
                         <div className="col-lg-8">
-                            <img src="../Bombillo.jpg" className="img-fluid" alt="Responsive image"></img>
+                            <img src="../imagenes/Bombillo.jpg" className="img-fluid" alt="Responsive image"></img>
                         </div>
                         <div className="col-lg-4">
-                            <div className="container" style={{marginTop: 70, marginBottom: 70}}>
+                            <div className="container" style={{marginTop: 80, marginBottom: 70}}>
                                 <form>
                                     <div>
                                         <h1>WATTLAB</h1>
-                                        <p>Ingresa con tus datos a la zona de empleados, aquí puedes realizar más acciones y conocer los movimientos de los usuarios.</p>
+                                        <p>{i18n.t('info_login')}</p>
                                     </div>
                                     
                                     <div className="form-group">
@@ -34,9 +33,6 @@ class Login extends React.Component {
                                     </div>
                                     <div className="form-group">
                                         <input type="password" className="form-control" placeholder="Contraseña"></input>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="password" className="form-control" placeholder="Repetir contraseña"></input>
                                     </div>
                                     <div className="recaptcha">
                                         <ReCAPTCHA size="normal" badge="inline" sitekey="6Ld-P9wUAAAAAJe-rewj_A9_m2B-X6B3YsVMvK5i" onChange={onChange} />

@@ -13,16 +13,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Archivo CSS de
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 
-function onChange(a, b, c) {
-  console.log(a, b, c);
-}
-
 ReactDOM.render(
-
-  <I18nextProvider i18n={i18n}>
-      <App />
-  </I18nextProvider>
-
+   <I18nextProvider i18n={i18n}>
+        <App />
+   </I18nextProvider>
+  
+  
   ,
 
   document.getElementById('root'));

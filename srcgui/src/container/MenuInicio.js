@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import Slides from '../componentes/Slides.js';
 import Servicios from '../componentes/Servicios.js';
 import Menu from '../componentes/Menu.js';
-
-import { Layout } from 'antd';
+///PARA DISEÑO 
+import { Layout } from 'antd'; 
 import Footer from '../componentes/Footer.js';
 const { Content} = Layout;
 
 class MenuInicio extends Component {
+    
     render() {
-
         return (
             <Layout className="layout">
                 <div>
@@ -27,14 +27,12 @@ class MenuInicio extends Component {
                 </div>
 
                 <div>
-                    <Footer/>
+                    <Footer />
                 </div>
-
+                
             </Layout>
-
         );
     }
-
 }
 
 export default MenuInicio;

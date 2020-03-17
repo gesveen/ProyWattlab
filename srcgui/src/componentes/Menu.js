@@ -8,7 +8,7 @@ class Menu extends Component {
         return (
 
             <div className="container">
-                    <header >
+                    <header>
                         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-ligth" style={{background:'white'}}>
                             <a className="navbar-header">
                                 <img className="img-responsive" src="../imagenes/logoTransparente.png" style={{ height: 'auto', width: 'auto', maxWidth: '200px' }} onClick={() => window.location = "/"} />

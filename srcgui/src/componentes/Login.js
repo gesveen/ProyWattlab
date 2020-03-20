@@ -41,7 +41,7 @@ function Login(){
                                         <ReCAPTCHA size="normal" badge="inline" sitekey="6Ld-P9wUAAAAAJe-rewj_A9_m2B-X6B3YsVMvK5i" onChange={onChange} />
                                     </div>
                                     <div>
-                                        <button type="button" className="btn btn-success btn-block">Enviar</button>
+                                        <button type="button" className="btn btn-success btn-block" onClick={() => window.location = "/ModuloAdministrador"}>Enviar</button>
                                     </div>
                                     <div style={{marginTop: 15}}>
                                         <a href="#" className="text-decoration-none">¿Has olvidado tu contraseña?</a>

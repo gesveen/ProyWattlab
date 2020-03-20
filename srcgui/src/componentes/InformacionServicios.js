@@ -3,7 +3,7 @@ import React from 'react';
 import Menu from './Menu';
 import { Layout } from 'antd';
 import Footer from './Footer.js';
-import Sidebar from './Sidebar.js';
+import Sidebar from './Sidebar';
 
 class InformacionServicios extends React.Component {
     render() {

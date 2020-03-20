@@ -1,19 +1,18 @@
 import React from 'react';
 import Footer from './Footer';
-import i18n from '../i18next';
+import { useTranslation } from 'react-i18next'; 
 import Menu from './Menu';
 import ReCAPTCHA from "react-google-recaptcha";
 import './style/recaptcha.css';
-
-import { Layout, AutoComplete } from 'antd';
+import { Layout} from 'antd';
 
 function onChange(value) {
     console.log("Captcha value:", value);
 }
 
-class Login extends React.Component {
-    
-    render() {
+function Login(){    
+
+    const i18n = useTranslation(); 
         return (
             <Layout className="layout">
                 <div>
@@ -57,7 +56,6 @@ class Login extends React.Component {
                 </div>
             </Layout>
         );
-    }
 }
 
 export default Login;

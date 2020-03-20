@@ -1,10 +1,9 @@
 import React from 'react';
-import i18n from 'i18next';
+import { useTranslation } from 'react-i18next'; 
  
-class Servicios extends React.Component {
- 
-  render() {
- 
+function Servicios() {
+    const i18n = useTranslation(); 
+
     return (
  
         <div className="container" style={{marginTop: '15px', marginBottom: "20px"}}>
@@ -37,8 +36,6 @@ class Servicios extends React.Component {
  
     )
     
-  }
- 
 }
  
 export default Servicios;

@@ -4,8 +4,8 @@ import { Layout } from 'antd';
 import Footer from './Footer'
 import Menu from './Menu'
 
-class PQRS extends React.Component {
-    render() {
+function PQRS() {
+
         return (
             <Layout className="layout">
                 <div>
@@ -49,7 +49,5 @@ class PQRS extends React.Component {
                 </div>
             </Layout>
         );
-    }
 }
-
 export default PQRS;

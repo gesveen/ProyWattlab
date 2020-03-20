@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 
 import { I18nextProvider } from "react-i18next";
@@ -14,11 +14,9 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 
 ReactDOM.render(
-   <I18nextProvider i18n={i18n}>
-        <App />
-   </I18nextProvider>
-  
-  
+     <Suspense fallback={(<div>Loading</div>)}>
+          <App />
+     </Suspense>       
   ,
 
   document.getElementById('root'));

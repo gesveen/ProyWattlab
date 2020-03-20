@@ -13,26 +13,25 @@ import MADashboard from './container/MADashboard';
 import MAUsers from './container/MAUsers';
 import MATransformadores from './container/MATransformadores';
 
-class App extends React.Component {
-  render() {
+function App() {
     return (
       <BrowserRouter>
       <div className="App">
         <Switch>
           <Route exact path="/" component={MenuInicio} />
+          <Route exact path="/ConsultaFactura" component={ConsultaFactura} />
           <Route exact path="/InformacionServicios" component={InformacionServicios} />
-          <Route exact path="/Login" component={Login} />
           <Route exact path="/PQRS" component={PQRS} />
           <Route exact path="/ConsultaFactura" component={ConsultaFactura} />
           <Route exact path="/ModuloAdministrador" component={ModuloAdministrador} />
           <Route exact path="/ModuloAdministrador/Dashboard" component={MADashboard} />
           <Route exact path="/ModuloAdministrador/Users" component={MAUsers} />
           <Route exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
+          <Route exact path="/Login" component={Login} />
         </Switch>
       </div>
       </BrowserRouter>
     );
-  }
 }
   
 export default App;

@@ -1,12 +1,9 @@
 import React, { Component } from 'react'; 
-import i18n from '../i18next';
 import Sidebar from './Sidebar';
 import { Layout } from 'antd';
 
-class ModuloAdministrador extends Component {
-    
-    render() {
-        
+class ModuloAdministrador extends Component {   
+    render() {     
         return (
             <Layout className="layout">
                 <div>

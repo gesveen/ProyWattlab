@@ -5,12 +5,12 @@ import Footer from './Footer'
 import Menu from './Menu'
 
 function PQRS() {
-
         return (
             <Layout className="layout">
                 <div>
                     <Menu/>
                 </div>
+                
                 <div style={{marginTop: "80px", marginLeft: "0px", marginRight: "0px"}}>
                     <img class="img-fluid" alt="Responsive image" src='../imagenes/Banner.jpg'></img>
                 </div>

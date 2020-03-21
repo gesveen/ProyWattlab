@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import './style/simple-sidebar.css';
-import i18n from '../i18next';
+import { useTranslation } from 'react-i18next'; 
 import { Layout } from 'antd';
 
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
@@ -9,10 +9,10 @@ import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/rea
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import MADashboard from '../container/MADashboard';
 import ModuloAdministrador from './ModuloAdministrador';
+import Language from './Language'; 
 
-
-class Sidebar extends Component {
-    render() {
+function Sidebar() {
+        const i18n = useTranslation(); 
         return(
             <Layout>
                 <SideNav className="bg-success" onSelect={(selected) => {
@@ -65,7 +65,7 @@ class Sidebar extends Component {
                                 <svg fill="white" height="20px" width="20px" viewBox="0 0 512.00533 512" xmlns="http://www.w3.org/2000/svg"><path d="m320 277.335938c-11.796875 0-21.332031 9.558593-21.332031 21.332031v85.335937c0 11.753906-9.558594 21.332032-21.335938 21.332032h-64v-320c0-18.21875-11.605469-34.496094-29.054687-40.554688l-6.316406-2.113281h99.371093c11.777344 0 21.335938 9.578125 21.335938 21.335937v64c0 11.773438 9.535156 21.332032 21.332031 21.332032s21.332031-9.558594 21.332031-21.332032v-64c0-35.285156-28.714843-63.99999975-64-63.99999975h-229.332031c-.8125 0-1.492188.36328175-2.28125.46874975-1.027344-.085937-2.007812-.46874975-3.050781-.46874975-23.53125 0-42.667969 19.13281275-42.667969 42.66406275v384c0 18.21875 11.605469 34.496093 29.054688 40.554687l128.386718 42.796875c4.351563 1.34375 8.679688 1.984375 13.226563 1.984375 23.53125 0 42.664062-19.136718 42.664062-42.667968v-21.332032h64c35.285157 0 64-28.714844 64-64v-85.335937c0-11.773438-9.535156-21.332031-21.332031-21.332031zm0 0"/><path d="m505.75 198.253906-85.335938-85.332031c-6.097656-6.101563-15.273437-7.9375-23.25-4.632813-7.957031 3.308594-13.164062 11.09375-13.164062 19.714844v64h-85.332031c-11.777344 0-21.335938 9.554688-21.335938 21.332032 0 11.777343 9.558594 21.332031 21.335938 21.332031h85.332031v64c0 8.621093 5.207031 16.40625 13.164062 19.714843 7.976563 3.304688 17.152344 1.46875 23.25-4.628906l85.335938-85.335937c8.339844-8.339844 8.339844-21.824219 0-30.164063zm0 0"/></svg>
                             </NavIcon>
                             <NavText>
-                                <p style={{fontFamily: "Helvetica"}}>Cerrar sesión</p>
+                                <p style={{ fontFamily: "Helvetica" }}>{i18n.t('logout')}</p>
                             </NavText>
                         </NavItem>
                     </SideNav.Nav>
@@ -78,16 +78,12 @@ class Sidebar extends Component {
                         <button className="btn btn-ligth dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {i18n.t('language')}
                         </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a className="dropdown-item" href={window.location.href + "?lng=es"}> {i18n.t('spanish')}</a>
-                            <a className="dropdown-item" href={window.location.href + "?lng=en"}>{i18n.t('english')}</a>
-                            <a className="dropdown-item" href={window.location.href + "?lng=pt"}>{i18n.t('portuguese')}</a>
-                        </div>
+
+                        <Language />
                     </div>
                 </nav>
             </Layout>
         );
-    }
 }
 
 export default Sidebar;

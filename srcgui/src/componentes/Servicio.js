@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'; 
  
-function Servicios() {
+function Servicio() {
     const i18n = useTranslation(); 
-
+    
     return (
  
         <div className="container" style={{marginTop: '15px', marginBottom: "20px"}}>
@@ -12,7 +12,7 @@ function Servicios() {
                 <div className="col-lg-4">
                     <img className="bd-placeholder-img rounded-circle" src='../imagenes/Consultar.jpg' width="200" height="190" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></img>
                     <h2>{i18n.t('consult_bill')}</h2>
-                    <p>{i18n.t('consult_bill_text')}</p>
+                    <p>{i18n.t('consult_bill_text')}</p> 
                     <p><a className="btn btn-success" href="#" role="button" onClick={() => window.location = "/ConsultaFactura"}>{i18n.t('click_here')} &raquo;</a></p>
                 </div>
  
@@ -38,4 +38,4 @@ function Servicios() {
     
 }
  
-export default Servicios;
+export default Servicio;

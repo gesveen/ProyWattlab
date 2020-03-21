@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slides from '../componentes/Slides.js';
-import Servicios from '../componentes/Servicios.js';
+import Servicio from '../componentes/Servicio.js';
 import Menu from '../componentes/Menu.js';
 ///PARA DISEÑO 
 import { Layout } from 'antd'; 
@@ -23,7 +23,7 @@ class MenuInicio extends Component {
                 </div>
 
                 <div>
-                    <Servicios/>
+                    <Servicio/>
                 </div>
 
                 <div>

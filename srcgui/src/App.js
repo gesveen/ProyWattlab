@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import 'antd/dist/antd.css';
 
-import InformacionServicios from './componentes/InformacionServicios';
+import InformacionServicios from './container/InformacionServicios';
 import MenuInicio from './container/MenuInicio';
 import Login from './componentes/Login';
 import PQRS from './componentes/PQRS';
@@ -16,7 +16,6 @@ import MATransformadores from './container/MATransformadores';
 function App() {
     return (
       <BrowserRouter>
-      <div className="App">
         <Switch>
           <Route exact path="/" component={MenuInicio} />
           <Route exact path="/InformacionServicios" component={InformacionServicios} />
@@ -28,7 +27,6 @@ function App() {
           <Route exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
           <Route exact path="/Login" component={Login} />
         </Switch>
-      </div>
       </BrowserRouter>
     );
 }

@@ -76,8 +76,8 @@ class ConsultaFactura extends React.Component {
                                     <td>28-12-2019</td>
                                     <td>$80.000</td>
                                     <td></td>
-                                </tr>
-                                <tr>
+                                 </tr>
+                                 <tr>
                                     <td>65200</td>
                                     <td>Octubre 2019</td>
                                     <td>$80.000</td>
@@ -88,8 +88,8 @@ class ConsultaFactura extends React.Component {
                                     <td>28-12-2019</td>
                                     <td>$80.000</td>
                                     <td></td>
-                                </tr>
-                                <tr>
+                                 </tr>
+                                 <tr>
                                     <td>65200</td>
                                     <td>Septiembre 2019</td>
                                     <td>$80.000</td>

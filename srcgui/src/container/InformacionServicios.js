@@ -13,12 +13,11 @@ class InformacionServicios extends React.Component {
                     <Menu />
                 </div>
                 <div>
-                    <Sidebar/>
+                    <Sidebar />
                 </div>
                 <div>
                     <Footer />
                 </div>
-                
             </Layout>
         );
     }

@@ -15,11 +15,7 @@ function Menu() {
                                     <img className="img-responsive" src="../imagenes/logoTransparente.png" style={{ height: 'auto', width: 'auto', maxWidth: '200px' }}/>
                                 </Link>
 
-                                <div className="btn-group">
-                                    <button className="btn btn-ligth dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        {i18n.t('language')}
-                                    </button>
-
+                                <div className="btn-group"> 
                                     <Language/>
                                 </div>
 

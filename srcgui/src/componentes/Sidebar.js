@@ -75,10 +75,6 @@ function Sidebar() {
                         <img className="img-responsive" src="../imagenes/logoTransparente.png" style={{ height: 'auto', width: 'auto', maxWidth: '200px' }}  />
                     </a>
                     <div className="btn-group">
-                        <button className="btn btn-ligth dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {i18n.t('language')}
-                        </button>
-
                         <Language />
                     </div>
                 </nav>

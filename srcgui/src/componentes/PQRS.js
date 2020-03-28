@@ -34,6 +34,9 @@ function PQRS() {
                                 <div className="form-group">
                                     <input className="form-control" placeholder="Asunto"></input>
                                 </div>
+                                <div className="form-group">
+                                    <input className="form-control" type="email" placeholder="Correo electrónico"></input>
+                                </div>
                                 <div>
                                     <input className="form-control" placeholder="Descripción" style={{height: "200px", verticalAlign: "top"}}></input>
                                 </div>

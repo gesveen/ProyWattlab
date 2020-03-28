@@ -23,7 +23,7 @@ function Login(){
                             <img src="../imagenes/Bombillo.jpg" className="img-fluid" alt="Responsive image" width="auto" height="auto"></img>
                         </div>
                         <div className="col-lg-5">
-                            <div className="container" style={{marginTop: 80, marginBottom: 70}}>
+                            <div className="container" style={{marginTop: 80, marginBottom: 70, textAlign: "center"}}>
                                 <form style={{marginTop: '20px'}}>
                                     <div>
                                         <h1>WATTLAB</h1>

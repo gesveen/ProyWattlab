@@ -1,42 +1,37 @@
 import React, { Component } from 'react'
-import Slides from './Slides.js';
-import Servicios from './Servicios';
-import Menu from './Menu';
-import i18n from '../i18next';
-
+import Slides from '../componentes/Slides.js';
+import Servicio from '../componentes/Servicio.js';
+import Menu from '../componentes/Menu.js';
+///PARA DISEÑO 
 import { Layout } from 'antd';
-import Footer from './Footer.js';
-const { Content} = Layout;
+import Footer from '../componentes/Footer.js';
+const { Content } = Layout;
 
 class MenuInicio extends Component {
     render() {
-        const { t } = this.props;
-
         return (
+
             <Layout className="layout">
                 <div>
-                    <Menu/>
+                    <Menu />
                 </div>
-                
+
                 <div>
-                    <Content style={{ padding: '0 0px', marginTop: 70 }}>
-                        <Slides /> 
+                    <Content style={{ padding: '0px 40px', marginTop: 70 }}>
+                        <Slides />
                     </Content>
                 </div>
 
                 <div>
-                    <Servicios/>
+                    <Servicio />
                 </div>
 
                 <div>
-                    <Footer/>
+                    <Footer />
                 </div>
-
             </Layout>
-
         );
     }
-
 }
 
 export default MenuInicio;

@@ -1,28 +1,30 @@
 import React from 'react';
 import Footer from './Footer';
-import i18n from '../i18next';
+import { useTranslation } from 'react-i18next'; 
+import Menu from './Menu';
 import ReCAPTCHA from "react-google-recaptcha";
 import './style/recaptcha.css';
-
-import { Layout, AutoComplete } from 'antd';
+import { Layout} from 'antd';
 
 function onChange(value) {
     console.log("Captcha value:", value);
 }
 
-class Login extends React.Component {
-    
-    render() {
+function Login(){    
+    const i18n = useTranslation(); 
         return (
             <Layout className="layout">
+                <div>
+                    <Menu/>
+                </div>
                 <main role="main" className="flex-shrink-0 mt-5">
                     <div className="row">
-                        <div className="col-lg-8">
-                            <img src="../imagenes/Bombillo.jpg" className="img-fluid" alt="Responsive image"></img>
+                        <div className="col-lg-7">
+                            <img src="../imagenes/Bombillo.jpg" className="img-fluid" alt="Responsive image" width="auto" height="auto"></img>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-5">
                             <div className="container" style={{marginTop: 80, marginBottom: 70}}>
-                                <form>
+                                <form style={{marginTop: '20px'}}>
                                     <div>
                                         <h1>WATTLAB</h1>
                                         <p>{i18n.t('info_login')}</p>
@@ -38,7 +40,7 @@ class Login extends React.Component {
                                         <ReCAPTCHA size="normal" badge="inline" sitekey="6Ld-P9wUAAAAAJe-rewj_A9_m2B-X6B3YsVMvK5i" onChange={onChange} />
                                     </div>
                                     <div>
-                                        <button type="button" className="btn btn-success btn-block">Enviar</button>
+                                        <button type="button" className="btn btn-success btn-block" onClick={() => window.location = "/ModuloAdministrador"}>{i18n.t('click_here')}</button>
                                     </div>
                                     <div style={{marginTop: 15}}>
                                         <a href="#" className="text-decoration-none">¿Has olvidado tu contraseña?</a>
@@ -53,7 +55,6 @@ class Login extends React.Component {
                 </div>
             </Layout>
         );
-    }
 }
 
 export default Login;

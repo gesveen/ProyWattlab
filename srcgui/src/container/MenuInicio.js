@@ -1,40 +1,37 @@
 import React, { Component } from 'react'
 import Slides from '../componentes/Slides.js';
-import Servicios from '../componentes/Servicios.js';
+import Servicio from '../componentes/Servicio.js';
 import Menu from '../componentes/Menu.js';
-
+///PARA DISEÑO 
 import { Layout } from 'antd';
 import Footer from '../componentes/Footer.js';
-const { Content} = Layout;
+const { Content } = Layout;
 
 class MenuInicio extends Component {
     render() {
-
         return (
+
             <Layout className="layout">
                 <div>
-                    <Menu/>
+                    <Menu />
                 </div>
-                
+
                 <div>
                     <Content style={{ padding: '0px 40px', marginTop: 70 }}>
-                        <Slides /> 
+                        <Slides />
                     </Content>
                 </div>
 
                 <div>
-                    <Servicios/>
+                    <Servicio />
                 </div>
 
                 <div>
-                    <Footer/>
+                    <Footer />
                 </div>
-
             </Layout>
-
         );
     }
-
 }
 
 export default MenuInicio;

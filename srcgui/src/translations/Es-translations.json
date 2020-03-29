@@ -19,6 +19,7 @@
             "pqrs_suggestion_text":"Es la manifestación de ideas o propuestas que pueden ayudar al mejoramiento de un servicio o la gestión de la misma entidad.",
             "pqrs_send_request":"Para enviar su solicitud, rellene los siguientes campos",
             "pqrs_subject":"Asunto",
+            "pqrs_email":"Correo electrónico",
             "pqrs_description":"Descripción",
             "send_button": "Enviar",
             "language": "Idioma",

@@ -1,13 +1,13 @@
-{ // Translation of the application components.
+{
       "translation": {
             "login": "Log In",
             "logout": "Log Out",
             "info_login": "Enter with your data to the employee area, here you can perform more actions and know the movements of users.",
             "consult_bill": "Check your bill",
-            "consult_bill_text": "To check your statement, download or pay your invoice ...", // statement?
+            "consult_bill_text": "To check your statement, download or pay your invoice ...",
             "information": "Information",
             "information_text": "Information about our products, services, prices, etc.",
-            "pqrs": "Petitions, complaints, claims and suggestions", // Modify PQRS bar.
+            "pqrs": "Petitions, complaints, claims and suggestions",
             "pqrs_text": "PQRS Section",
             "pqrs_petition":"Petition",
             "pqrs_petition_text": "It is the fundamental right of every person to submit respectful requests to the authorities for reasons of general or particular interest, and to obtain their prompt resolution.",

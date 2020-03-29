@@ -1,13 +1,13 @@
-{ // Traducción de los componentes de la aplicación.
+{
       "translation": {
             "login": "Iniciar sesión",
             "logout": "Cerrar sesión",
             "info_login": "Ingresa con tus datos a la zona de empleados, aquí puedes realizar más acciones y conocer los movimientos de los usuarios.",
             "consult_bill": "Consulta tu factura",
-            "consult_bill_text": "Para consultar tu extracto, descargar o pagar tu factura...", // ¿estrato o extracto?
+            "consult_bill_text": "Para consultar tu extracto, descargar o pagar tu factura...",
             "information": "Información",
             "information_text": "Información acerca de nuestros productos, servicios, precios, etc.",
-            "pqrs": "Peticiones, quejas, reclamos y sugerencias", // Modificar barra PQRS.
+            "pqrs": "Peticiones, quejas, reclamos y sugerencias",
             "pqrs_text": "Sección de PQRS",
             "pqrs_petition":"Petición",
             "pqrs_petition_text": "Es el derecho fundamental que tiene toda persona a presentar solicitudes respetuosas a las autoridades por motivos de interés general o particular, y a obtener su pronta resolución.",

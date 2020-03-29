@@ -1,13 +1,13 @@
-{ // Tradução dos componentes do aplicativo.
+{
       "translation": {
             "login": "Iniciar sessão",
             "logout": "Fechar sessão",
             "info_login": "Entre com seus dados na área de funcionários, aqui você pode executar mais ações e conhecer os movimentos dos usuários.",
             "consult_bill": "Verifique sua fatura",
-            "consult_bill_text": "Para verificar seu extrato, faça o download ou pague sua fatura ...", // ¿estrato o extrato?
+            "consult_bill_text": "Para verificar seu extrato, faça o download ou pague sua fatura ...",
             "information": "Informação",
             "information_text": "Informações sobre nossos produtos, serviços, preços, etc.",
-            "pqrs": "Petições, reclamações, reivindicações e sugestões", // Modifique a barra PQRS.
+            "pqrs": "Petições, reclamações, reivindicações e sugestões",
             "pqrs_text": "Seção PQRS",
             "pqrs_petition":"Petição",
             "pqrs_petition_text": "É direito fundamental de qualquer pessoa enviar solicitações respeitosas às autoridades por razões de interesse geral ou particular e obter sua pronta resolução.",

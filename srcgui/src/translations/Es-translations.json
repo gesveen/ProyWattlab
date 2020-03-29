@@ -20,6 +20,7 @@
             "pqrs_send_request":"Para enviar su solicitud, rellene los siguientes campos",
             "pqrs_subject":"Asunto",
             "pqrs_description":"Descripción",
+            "send_button": "Enviar",
             "language": "Idioma",
             "spanish": "Español",
             "english": "Inglés",

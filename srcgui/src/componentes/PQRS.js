@@ -40,11 +40,11 @@ function PQRS() {
                             </div>
                             
                             <div className="form-group">
-                                <input className="form-control" placeholder="{i18n.t('pqrs_subject')}"></input>
+                                <input className="form-control" placeholder={i18n.t('pqrs_subject')}></input>
                             </div>
                             
                             <div>
-                                <input className="form-control" placeholder="{i18n.t('pqrs_description')}" style={{height: "200px", verticalAlign: "top"}}></input>
+                                <input className="form-control" placeholder={i18n.t('pqrs_description')} style={{height: "200px", verticalAlign: "top"}}></input>
                             </div>
                             
                             <div style={{marginTop: "20px"}}>
@@ -62,5 +62,3 @@ function PQRS() {
     );
 }
 export default PQRS;
-
-// Asunto (line 43), Descripción (line 47)

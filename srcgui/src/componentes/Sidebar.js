@@ -68,7 +68,7 @@ function Sidebar() {
                     </NavItem>
                 </SideNav.Nav>
             </SideNav>
-            <nav style={{ background: 'white', marginLeft: "50px" }}>
+            <nav style={{ background: 'white', marginLeft: "60px"}}>
                 <div className="center-block">
                     <a className="navbar-header">
                         <img className="img-responsive" src="../imagenes/logoTransparente.png" style={{ height: 'auto', width: 'auto', maxWidth: '200px' }} />

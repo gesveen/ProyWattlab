@@ -13,7 +13,7 @@ function Sidebar() {
     const i18n = useTranslation();
     return (
         <Layout>
-            <SideNav className="bg-success" onSelect={(selected) => {
+            <SideNav style={{height: "100%"}} className="bg-success" onSelect={(selected) => {
                 // Add your code here
             }}>
                 <SideNav.Toggle />

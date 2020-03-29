@@ -20,7 +20,7 @@
             "pqrs_send_request":"To send your request, fill in the following fields",
             "pqrs_subject":"Subject",
             "pqrs_description":"Description",
-            "send_button": "Send",
+            "send_button": "Submit",
             "language": "Language",
             "spanish": "Spanish",
             "english": "English",

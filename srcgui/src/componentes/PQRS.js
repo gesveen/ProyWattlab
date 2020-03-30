@@ -42,6 +42,10 @@ function PQRS() {
                             <div className="form-group">
                                 <input className="form-control" placeholder={i18n.t('pqrs_subject')}></input>
                             </div>
+
+                            <div className="form-group">
+                                <input className="form-control" type="email" placeholder={i18n.t('pqrs_email')}></input>
+                            </div>
                             
                             <div>
                                 <input className="form-control" placeholder={i18n.t('pqrs_description')} style={{height: "200px", verticalAlign: "top"}}></input>

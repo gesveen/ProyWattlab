@@ -53,7 +53,7 @@ function Login() {
                                 <div className="form-group">
                                     <input type="password" className="form-control" placeholder="Contraseña"></input>
                                 </div>
-                                <div className="recaptcha">
+                                <div className="recaptcha ">
                                     <Recaptcha
                                         sitekey="6LdoWeUUAAAAAElS6IhF9lP_W6DbxqWTUDB-o-mL"
                                         render="explicit"

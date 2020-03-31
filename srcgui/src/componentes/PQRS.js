@@ -1,8 +1,7 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next'; // Traducciones.
+import { useTranslation } from 'react-i18next';
 import { Layout } from 'antd';
 import axios from 'axios';
-
 import Footer from './Footer'
 import Menu from './Menu'
 

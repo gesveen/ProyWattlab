@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slides from '../componentes/Slides.js';
-import Servicio from '../componentes/Servicio.js';
+import Servicio from './Servicio.js';
 import Menu from '../componentes/Menu.js';
 ///PARA DISEÑO 
 import { Layout } from 'antd';

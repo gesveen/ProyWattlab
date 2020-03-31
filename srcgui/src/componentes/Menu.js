@@ -20,6 +20,7 @@ function Menu() {
                     </div>
 
                     <ul className="navbar-nav ml-auto">
+
                         <button type="button" className="btn btn-success" onClick={() => window.location = "/Login"}>
                             {i18n.t('login')}
                         </button>

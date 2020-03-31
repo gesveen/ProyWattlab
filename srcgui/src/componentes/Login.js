@@ -20,7 +20,7 @@ const handleFormSubmit = () => {
     if(valido != null){
         window.location = "/ModuloAdministrador";
     }else{
-        alert("CONFIRME EL CAPCHA")
+        alert("Debes confirmar el captcha antes de iniciar sesión.")
     }
     
 }
@@ -48,10 +48,10 @@ function Login() {
                                 </div>
 
                                 <div className="form-group">
-                                    <input className="form-control" placeholder="Número de documento"></input>
+                                    <input className="form-control" placeholder={i18n.t('login_document')}></input>
                                 </div>
                                 <div className="form-group">
-                                    <input type="password" className="form-control" placeholder="Contraseña"></input>
+                                    <input type="password" className="form-control" placeholder={i18n.t('login_password')}></input>
                                 </div>
                                 <div className="recaptcha ">
                                     <Recaptcha
@@ -65,7 +65,7 @@ function Login() {
                                     <button type="button" className="btn btn-success btn-block" onClick={handleFormSubmit}>{i18n.t('click_here')}</button>
                                 </div>
                                 <div style={{ marginTop: 15 }}>
-                                    <a href="#" className="text-decoration-none">¿Has olvidado tu contraseña?</a>
+                                    <a href="#" className="text-decoration-none">{i18n.t('login_password_forget')}</a>
                                 </div>
                             </form>
                         </div>

@@ -1,8 +1,11 @@
 {
       "translation": {
-            "login": "Log In",
-            "logout": "Log Out",
+            "login": "Log in",
+            "login_document":"ID number",
+            "login_password":"Password",
+            "login_password_forget":"Did you forget your password?",
             "info_login": "Enter with your data to the employee area, here you can perform more actions and know the movements of users.",
+            "logout": "Log Out",
             "consult_bill": "Check your bill",
             "consult_bill_text": "To check your statement, download or pay your invoice ...",
             "information": "Information",

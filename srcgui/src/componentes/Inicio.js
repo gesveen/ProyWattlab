@@ -7,11 +7,17 @@ function Inicio() {
 
  const i18n = useTranslation();
     return(
-        <div className="container">
-            <div>
-              <h1>Inicio</h1>
+        <div className="container-fluid" style={{textAlign: "center", backgroundColor: "white", position: "absolute", top: "70px", left: "0px"}}>
+            <div className="container" style={{justifyContent: "center"}}>
+              <div class="jumbotron" style={{backgroundColor: "#0f1323", color: "white", marginTop: "10px"}}>
+                <div class="container">
+                <h1 class="display-7" style={{color: "white"}}>Panel de administración</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              </div>
             </div>
-            <div className="row" style={{textAlign: "center"}}>
+            </div>
+            <div className="container" style={{justifyContent: "center"}}>
+            <div className="row">
                 <CardOpt
                 modulo = "Usuarios"
                 urlRuta = "/ModuloAdministrador/Users"
@@ -42,15 +48,7 @@ function Inicio() {
                 d1 = "M.125 11.17A.5.5 0 01.5 11H6a.5.5 0 01.5.5 1.5 1.5 0 003 0 .5.5 0 01.5-.5h5.5a.5.5 0 01.496.562l-.39 3.124A1.5 1.5 0 0114.117 16H1.883a1.5 1.5 0 01-1.489-1.314l-.39-3.124a.5.5 0 01.121-.393zM3.81.563A1.5 1.5 0 014.98 0h6.04a1.5 1.5 0 011.17.563l3.7 4.625a.5.5 0 01-.78.624l-3.7-4.624A.5.5 0 0011.02 1H4.98a.5.5 0 00-.39.188L.89 5.812a.5.5 0 11-.78-.624L3.81.563z"
                 d2 = "M.125 5.17A.5.5 0 01.5 5H6a.5.5 0 01.5.5 1.5 1.5 0 003 0A.5.5 0 0110 5h5.5a.5.5 0 01.496.562l-.39 3.124A1.5 1.5 0 0114.117 10H1.883A1.5 1.5 0 01.394 8.686l-.39-3.124a.5.5 0 01.121-.393z"
                 icono = "bi bi-inboxes-fill"/>
-
-                <CardOpt
-                modulo = "Configuración"
-                urlRuta = "/ModuloAdministrador/Configuracion"
-                color = "#5fb677"
-                d1 = "M0 1l1-1 3.081 2.2a1 1 0 01.419.815v.07a1 1 0 00.293.708L10.5 9.5l.914-.305a1 1 0 011.023.242l3.356 3.356a1 1 0 010 1.414l-1.586 1.586a1 1 0 01-1.414 0l-3.356-3.356a1 1 0 01-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 00-.707-.293h-.071a1 1 0 01-.814-.419L0 1zm11.354 9.646a.5.5 0 00-.708.708l3 3a.5.5 0 00.708-.708l-3-3z"
-                d2 = "M15.898 2.223a3.003 3.003 0 01-3.679 3.674L5.878 12.15a3 3 0 11-2.027-2.027l6.252-6.341A3 3 0 0113.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
-                icono = "bi bi-tools"/>
-
+            </div>
           </div>
        </div>
     )

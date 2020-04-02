@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'; // Traducciones.
 import { Layout } from 'antd';
 import Footer from './Footer'
 import Menu from './Menu'
@@ -46,7 +46,7 @@ function PQRS() {
                     </div>
                     
                     <div className="col-lg-5" style={{marginTop: "20px"}}>
-                        <form onSubmit={(event) => handleFormSubmit(event)}>
+                        <form onSubmit={(event) => handleFormSubmit(event)}
                             <div>
                                 <h3 style={{marginBottom: "20px"}}>{i18n.t('pqrs_send_request')}</h3>
                             </div>
@@ -70,7 +70,6 @@ function PQRS() {
                     </div>
                 </div>
             </div>
-
             <div>
                 <Footer/>
             </div>

@@ -1,8 +1,11 @@
 {
       "translation": {
             "login": "Iniciar sesión",
-            "logout": "Cerrar sesión",
+            "login_document":"Número de documento",
+            "login_password":"Contraseña",
+            "login_password_forget":"¿Has olvidado tu contraseña?",
             "info_login": "Ingresa con tus datos a la zona de empleados, aquí puedes realizar más acciones y conocer los movimientos de los usuarios.",
+            "logout": "Cerrar sesión",
             "consult_bill": "Consulta tu factura",
             "consult_bill_text": "Para consultar tu extracto, descargar o pagar tu factura...",
             "information": "Información",
@@ -33,3 +36,4 @@
             "prices": "Precios"
       }
 }
+

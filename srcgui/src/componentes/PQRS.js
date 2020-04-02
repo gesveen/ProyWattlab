@@ -3,6 +3,18 @@ import { useTranslation } from 'react-i18next'; // Traducciones.
 import { Layout } from 'antd';
 import Footer from './Footer'
 import Menu from './Menu'
+import axios from 'axios';
+
+const handleFormSubmit = e => {
+    e.preventDefault();
+
+    axios.post('http://127.0.0.1:8000/api/pqrs/', {
+        "titulo": e.target.elements.asunto.value,
+        "contenido": e.target.elements.contenido.value + " EMAIL CONTACTO: " + e.target.elements.email.value ,
+    })  
+        .then(res => console.log(res.data))
+        .catch(error => console.log(error))
+}
 
 function PQRS() {
     const i18n = useTranslation();
@@ -34,31 +46,30 @@ function PQRS() {
                     </div>
                     
                     <div className="col-lg-5" style={{marginTop: "20px"}}>
-                        <form>
+                        <form onSubmit={(event) => handleFormSubmit(event)}
                             <div>
                                 <h3 style={{marginBottom: "20px"}}>{i18n.t('pqrs_send_request')}</h3>
                             </div>
                             
                             <div className="form-group">
-                                <input className="form-control" placeholder={i18n.t('pqrs_subject')}></input>
+                                <input name="asunto" className="form-control" placeholder={i18n.t('pqrs_subject')}></input>
                             </div>
 
                             <div className="form-group">
-                                <input className="form-control" type="email" placeholder={i18n.t('pqrs_email')}></input>
+                                <input name="email" className="form-control" type="email" placeholder={i18n.t('pqrs_email')}></input>
                             </div>
                             
                             <div>
-                                <input className="form-control" placeholder={i18n.t('pqrs_description')} style={{height: "200px", verticalAlign: "top"}}></input>
+                                <input name="contenido" className="form-control" placeholder={i18n.t('pqrs_description')} style={{height: "200px", verticalAlign: "top"}}></input>
                             </div>
                             
                             <div style={{marginTop: "20px"}}>
-                                <button type="button" className="btn btn-success btn-block">{i18n.t('send_button')}</button>
+                                <button type="submit" className="btn btn-success btn-block">{i18n.t('send_button')}</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            
             <div>
                 <Footer/>
             </div>

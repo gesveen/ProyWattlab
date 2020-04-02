@@ -1,8 +1,11 @@
 {
       "translation": {
             "login": "Iniciar sessão",
-            "logout": "Fechar sessão",
+            "login_document":"Número do documento",
+            "login_password":"Senha",
+            "login_password_forget":"Esqueceu sua senha?",
             "info_login": "Entre com seus dados na área de funcionários, aqui você pode executar mais ações e conhecer os movimentos dos usuários.",
+            "logout": "Fechar sessão",
             "consult_bill": "Verifique sua fatura",
             "consult_bill_text": "Para verificar seu extrato, faça o download ou pague sua fatura ...",
             "information": "Informação",
@@ -33,3 +36,4 @@
             "prices": "Preços"
       }
 }
+

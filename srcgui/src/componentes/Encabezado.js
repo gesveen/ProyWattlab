@@ -1,11 +1,11 @@
 import React from 'react'
-
 import { useTranslation } from 'react-i18next';
 
 function Encabezado(props) {
 
  const{titulo, descripcion} = props;
  const i18n = useTranslation();
+ 
     return(
             <div className="container" style={{justifyContent: "center"}}>
                 <div className="jumbotron" style={{backgroundColor: "#0f1323", color: "white", marginTop: "10px", textAlign: "center"}}>

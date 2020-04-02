@@ -1,28 +1,27 @@
 import React from 'react';
-import Footer from './Footer';
 import { useTranslation } from 'react-i18next';
+import { Layout } from 'antd';
+import Footer from './Footer';
 import Menu from './Menu';
 import Recaptcha from 'react-recaptcha';
 import './style/recaptcha.css';
-import { Layout } from 'antd';
-let valido; 
+let valido;
 
 //FUNCIONES DEL CAPTCHA
 var callback = function () {
-    console.log('Done!!!!');
+    console.log('Done!');
 };
 
 var verifyCallback = function (response) {
-     valido = response; 
+    valido = response;
 };
 
 const handleFormSubmit = () => {
-    if(valido != null){
+    if (valido != null) {
         window.location = "/ModuloAdministrador";
-    }else{
+    } else {
         alert("Debes confirmar el captcha antes de iniciar sesión.")
     }
-    
 }
 
 function Login() {
@@ -50,10 +49,12 @@ function Login() {
                                 <div className="form-group">
                                     <input className="form-control" placeholder={i18n.t('login_document')}></input>
                                 </div>
+
                                 <div className="form-group">
                                     <input type="password" className="form-control" placeholder={i18n.t('login_password')}></input>
                                 </div>
-                                <div className="recaptcha " >
+
+                                <div className="recaptcha ">
                                     <Recaptcha
                                         sitekey="6LdoWeUUAAAAAElS6IhF9lP_W6DbxqWTUDB-o-mL"
                                         render="explicit"
@@ -61,9 +62,11 @@ function Login() {
                                         onloadCallback={callback}
                                     />
                                 </div>
+
                                 <div>
-                                    <button type="button" className="btn btn-block btn-success" onClick={handleFormSubmit}>{i18n.t('click_here')}</button>
+                                    <button type="button" className="btn btn-success btn-block" onClick={handleFormSubmit}>{i18n.t('click_here')}</button>
                                 </div>
+
                                 <div style={{ marginTop: 15 }}>
                                     <a href="#" className="text-decoration-none">{i18n.t('login_password_forget')}</a>
                                 </div>
@@ -72,11 +75,11 @@ function Login() {
                     </div>
                 </div>
             </main>
+
             <div>
                 <Footer />
             </div>
         </Layout>
     );
 }
-
 export default Login;

@@ -17,7 +17,7 @@ class MenuInicio extends Component {
                 </div>
 
                 <div>
-                    <Content style={{ padding: '0px 40px', marginTop: 70 }}>
+                    <Content style={{ padding: '10px 30px', marginTop: 70 }}>
                         <Slides />
                     </Content>
                 </div>

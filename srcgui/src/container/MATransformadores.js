@@ -3,6 +3,9 @@ import Sidebar from '../componentes/Sidebar';
 import { Layout } from 'antd';
 import Maps from '../componentes/Maps'
 
+
+
+
 class MATransformadores extends Component {
     
     render() {

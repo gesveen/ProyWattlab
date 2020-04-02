@@ -1,7 +1,8 @@
-from django.urls import path
 
-from .views import index
+from .views import  ArticuloViewSet
+from rest_framework.routers import DefaultRouter 
 
-urlpatterns = [
-    path('', index),
-]
+router = DefaultRouter()
+router.register(r'pqrs', ArticuloViewSet)
+
+urlpatterns = router.urls

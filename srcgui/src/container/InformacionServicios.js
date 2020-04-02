@@ -13,7 +13,7 @@ class InformacionServicios extends React.Component {
                     <Menu />
                 </div>
                 <div>
-                    <Sidebar />
+                    <h1>Aquí va la información de los servicios</h1>
                 </div>
                 <div>
                     <Footer />

@@ -1,24 +1,19 @@
 import React, { Component } from 'react'; 
 import Sidebar from '../componentes/Sidebar';
 import { Layout } from 'antd';
+import Usuarios from '../componentes/Usuarios';
 
-class MAUsers extends Component {
-    
-    render() {
-        
-        return (
-            <Layout className="layout">
-                <div>
-                    <Sidebar/>
-                </div>
-                <div className="container" style={{marginTop: "20px"}}>
-                    <h1>Sección para Users</h1>
-                </div>
-            </Layout>
-            
-        );
-    }
-
+function MAUsers() {
+    return (
+        <Layout className="layout">
+            <div>
+                <Sidebar/>
+            </div>
+            <div>
+                <Usuarios/>
+            </div>
+        </Layout>        
+    );
 }
 
 export default MAUsers;

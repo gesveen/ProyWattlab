@@ -9,19 +9,18 @@ function Menu() {
     return (
         <div className="container">
             <header>
-                <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-ligth" style={{ background: "#45B649", background: "-webkit-linear-gradient(to right, #45B649, #DCE35B)", background: "linear-gradient(to right, #45B649, #DCE35B)" }}>
+                <nav className="navbar navbar-expand-md navbar-dark fixed-top rounded-bottom" style={{ background: "#45B649", background: "-webkit-linear-gradient(to right, #45B649, #DCE35B)", background: "linear-gradient(to right, #45B649, #DCE35B)" }}>
 
                     <Link to="/" className="navbar-header">
                         <img className="img-responsive" src="../imagenes/imagotipo.png" style={{ height: '60px', width: 'auto', maxWidth: '200px' }} />
                     </Link>
 
-                    <div className="btn-group">
+                    <div className="btn-group rounded">
                         <Language />
                     </div>
 
                     <ul className="navbar-nav ml-auto">
-
-                        <button type="button" className="btn btn-light" onClick={() => window.location = "/Login"}>
+                        <button type="button" className="btn" style={{fontSize: "13pt"}} onClick={() => window.location = "/Login"}>
                             {i18n.t('login')}
                         </button>
                     </ul>

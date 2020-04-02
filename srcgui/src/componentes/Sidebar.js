@@ -106,7 +106,7 @@ function Sidebar() {
         <nav className="rounded-bottom" style={{ background: "#45B649", background: "-webkit-linear-gradient(to right, #45B649, #DCE35B)", background: "linear-gradient(to right, #45B649, #DCE35B)", marginLeft: "0px", textAlign: "left"}}>
                 <div className="center-block" >
                     <a className="navbar-header">
-                        <img className="img-responsive" src="../imagenes/imagotipo.png" style={{ height: '60px', width: 'auto', maxWidth: '200px', marginLeft: "70px", marginTop: "10px" }} />
+                        <img className="img-responsive" src="../imagenes/imagotipo.png" style={{ height: '60px', width: 'auto', maxWidth: '200px', marginLeft: "70px", marginTop: "10px" }} onClick={() => window.location = "/ModuloAdministrador"} />
                     </a>
                     <div className="btn-group rounded" style={{marginRight: "10px", backgroundColor: ""}}>
                         <Language />

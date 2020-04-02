@@ -53,7 +53,7 @@ function Login() {
                                 <div className="form-group">
                                     <input type="password" className="form-control" placeholder={i18n.t('login_password')}></input>
                                 </div>
-                                <div className="recaptcha ">
+                                <div className="recaptcha " >
                                     <Recaptcha
                                         sitekey="6LdoWeUUAAAAAElS6IhF9lP_W6DbxqWTUDB-o-mL"
                                         render="explicit"
@@ -62,7 +62,7 @@ function Login() {
                                     />
                                 </div>
                                 <div>
-                                    <button type="button" className="btn btn-success btn-block" onClick={handleFormSubmit}>{i18n.t('click_here')}</button>
+                                    <button type="button" className="btn btn-block btn-success" onClick={handleFormSubmit}>{i18n.t('click_here')}</button>
                                 </div>
                                 <div style={{ marginTop: 15 }}>
                                     <a href="#" className="text-decoration-none">{i18n.t('login_password_forget')}</a>

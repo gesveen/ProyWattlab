@@ -11,9 +11,15 @@ function Language() {
             {i18n.t('language')}
         </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a className="dropdown-item" onClick={() => { onLanguajeChange("es") }}>{i18n.t('spanish')}</a>
-                <a className="dropdown-item" onClick={() => { onLanguajeChange("en") }}>{i18n.t('english')}</a>
-                <a className="dropdown-item" onClick={() => { onLanguajeChange("pt") }}>{i18n.t('portuguese')}</a>
+                <a className="dropdown-item" onClick={() => { onLanguajeChange("es") }}>
+                    <img height="20px" src="https://img.icons8.com/color/48/000000/colombia.png"/>
+                    &nbsp; {i18n.t('spanish')}</a>
+                <a className="dropdown-item" onClick={() => { onLanguajeChange("en") }}>
+                    <img height="20px" src="https://img.icons8.com/color/48/000000/usa.png"/>
+                    &nbsp; {i18n.t('english')}</a>
+                <a className="dropdown-item" onClick={() => { onLanguajeChange("pt") }}>
+                    <img height="20px" src="https://img.icons8.com/color/48/000000/brazil.png"/> 
+                    &nbsp; {i18n.t('portuguese')}</a>
             </div>
         </div>
 

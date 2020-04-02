@@ -5,50 +5,50 @@ import Language from './Language';
 import { useTranslation } from 'react-i18next';
 
 var styles = {
-    bmBurgerButton: {
-      position: 'fixed',
-      width: '30px',
-      height: '25px',
-      left: '36px',
-      top: '25px'
-    },
-    bmBurgerBars: {
-      background: '#0f1323'
-    },
-    bmBurgerBarsHover: {
-      background: '#a90000'
-    },
-    bmCrossButton: {
-      height: '24px',
-      width: '24px'
-    },
-    bmCross: {
-      background: '#bdc3c7'
-    },
-    bmMenuWrap: {
-      position: 'fixed',
-      height: '100%'
-    },
-    bmMenu: {
-      background: '#0f1323',
-      padding: '2.5em 1.5em 0',
-      fontSize: '12pt',
-      color: '#ffffff',
-    },
-    bmMorphShape: {
-      fill: 'white'
-    },
-    bmItemList: {
-      color: 'white',
-      padding: '0.8em'
-    },
-    bmItem: {
-      display: 'inline-block'
-    },
-    bmOverlay: {
-      background: 'rgba(0, 0, 0, 0.3)'
-    },
-  };
+  bmBurgerButton: {
+    position: 'fixed',
+    width: '30px',
+    height: '25px',
+    left: '36px',
+    top: '25px'
+  },
+  bmBurgerBars: {
+    background: '#0f1323'
+  },
+  bmBurgerBarsHover: {
+    background: '#a90000'
+  },
+  bmCrossButton: {
+    height: '24px',
+    width: '24px'
+  },
+  bmCross: {
+    background: '#bdc3c7'
+  },
+  bmMenuWrap: {
+    position: 'fixed',
+    height: '100%'
+  },
+  bmMenu: {
+    background: '#0f1323',
+    padding: '2.5em 1.5em 0',
+    fontSize: '12pt',
+    color: '#ffffff',
+  },
+  bmMorphShape: {
+    fill: 'white'
+  },
+  bmItemList: {
+    color: 'white',
+    padding: '0.8em'
+  },
+  bmItem: {
+    display: 'inline-block'
+  },
+  bmOverlay: {
+    background: 'rgba(0, 0, 0, 0.3)'
+  },
+};
   
 
 function Sidebar() {

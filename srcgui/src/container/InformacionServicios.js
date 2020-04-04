@@ -3,7 +3,6 @@ import React from 'react';
 import Menu from '../componentes/Menu';
 import { Layout } from 'antd';
 import Footer from '../componentes/Footer.js';
-import Sidebar from '../componentes/Sidebar';
 
 class InformacionServicios extends React.Component {
     render() {
@@ -13,7 +12,7 @@ class InformacionServicios extends React.Component {
                     <Menu />
                 </div>
                 <div>
-                    <Sidebar />
+                    <h1>Aquí va la información de los servicios</h1>
                 </div>
                 <div>
                     <Footer />

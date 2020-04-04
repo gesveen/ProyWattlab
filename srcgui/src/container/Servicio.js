@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Card from './Card.js';
+import Card from '../componentes/Card.js';
 
 class Servicio extends Component {
     render() {
         return (
-            <div className="container" style={{ marginTop: '15px', marginBottom: "20px" }}>
+            <div className="container" style={{ marginTop: '15px', marginBottom: "20px", textAlign: "center"}}>
                 <div className="row">
 
                     <Card

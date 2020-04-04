@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slides from '../componentes/Slides.js';
-import Servicio from '../componentes/Servicio.js';
+import Servicio from './Servicio.js';
 import Menu from '../componentes/Menu.js';
 ///PARA DISEÑO 
 import { Layout } from 'antd';
@@ -17,7 +17,7 @@ class MenuInicio extends Component {
                 </div>
 
                 <div>
-                    <Content style={{ padding: '0px 40px', marginTop: 70 }}>
+                    <Content style={{ padding: '10px 30px', marginTop: 70 }}>
                         <Slides />
                     </Content>
                 </div>

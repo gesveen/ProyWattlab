@@ -10,23 +10,23 @@ class ConsultaFactura extends React.Component {
                 <div>
                     <Menu/>
                 </div>
-                <div style={{marginTop: "80px", marginLeft: "0px", marginRight: "0px"}}>
+                <div style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
                     <img class="img-fluid" alt="Responsive image" src='../imagenes/ConsultaFactura.jpg'></img>
                 </div>
-                <div className="container" style={{marginTop: "10px", marginBottom: "10px"}}>
-                    <div className="row" style={{marginTop: "20px"}}>
-                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div className="container-fluid" style={{marginTop: "10px", marginBottom: "10px"}}>
+                    <div className="form-row justify-content-lg-center justify-content-md-center" style={{marginTop: "20px"}}>
+                        <div className="col-lg-3 col-md-4 col-sm-3 col-xs-12">
                             <p>Digite su número de documento</p>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div className="col-lg-3 col-md-4 col-sm-3 col-xs-12">
                             <input className="form-control" placeholder="" style={{marginBottom: "10px"}}></input>
                         </div>
-                        <div className="btn-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div className="btn-group col-lg-3 col-md-4 col-sm-3 col-xs-12">
                             <button type="button" className="btn btn-success btn-default" style={{marginRight: "10px", width: "80px", height: "40px"}}>Buscar</button>
                             <button type="button" className="btn btn-success btn-default" style={{ width: "80px", height: "40px"}}>Limpiar</button>
                         </div>
                     </div>
-                    <div className="container pre-scrollable" style={{marginTop: "10px", maxHeight: "350px"}}>
+                    <div className="container pre-scrollable" style={{marginTop: "10px", maxHeight: "350px", marginBottom: "20px"}}>
                         <table className="table">
                             <thead className="thead-dark">
                                 <tr>

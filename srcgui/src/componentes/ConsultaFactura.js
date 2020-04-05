@@ -11,7 +11,7 @@ class ConsultaFactura extends React.Component {
                     <Menu/>
                 </div>
                 <div style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
-                    <img class="img-fluid" alt="Responsive image" src='../imagenes/ConsultaFactura.jpg'></img>
+                    <img className="img-fluid" alt="Responsive image" src='../imagenes/ConsultaFactura.jpg'></img>
                 </div>
                 <div className="container-fluid" style={{marginTop: "10px", marginBottom: "10px"}}>
                     <div className="form-row justify-content-lg-center justify-content-md-center" style={{marginTop: "20px"}}>
@@ -48,7 +48,7 @@ class ConsultaFactura extends React.Component {
                                     <td>30-01-2020</td>
                                     <td>$100.000</td>
                                     <td>30-03-2020</td>
-                                    <td><span class="badge badge-danger">Sin pagar</span></td>
+                                    <td><span className="badge badge-danger">Sin pagar</span></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -60,7 +60,7 @@ class ConsultaFactura extends React.Component {
                                     <td>30-12-2019</td>
                                     <td>$110.000</td>
                                     <td>30-02-2020</td>
-                                    <td><span class="badge badge-success">Pagado</span></td>
+                                    <td><span className="badge badge-success">Pagado</span></td>
                                     <td>28-12-2019</td>
                                     <td>$80.000</td>
                                     <td></td>
@@ -72,7 +72,7 @@ class ConsultaFactura extends React.Component {
                                     <td>30-12-2019</td>
                                     <td>$110.000</td>
                                     <td>30-02-2020</td>
-                                    <td><span class="badge badge-success">Pagado</span></td>
+                                    <td><span className="badge badge-success">Pagado</span></td>
                                     <td>28-12-2019</td>
                                     <td>$80.000</td>
                                     <td></td>
@@ -84,7 +84,7 @@ class ConsultaFactura extends React.Component {
                                     <td>30-12-2019</td>
                                     <td>$110.000</td>
                                     <td>30-02-2020</td>
-                                    <td><span class="badge badge-success">Pagado</span></td>
+                                    <td><span className="badge badge-success">Pagado</span></td>
                                     <td>28-12-2019</td>
                                     <td>$80.000</td>
                                     <td></td>
@@ -96,7 +96,7 @@ class ConsultaFactura extends React.Component {
                                     <td>30-12-2019</td>
                                     <td>$110.000</td>
                                     <td>30-02-2020</td>
-                                    <td><span class="badge badge-success">Pagado</span></td>
+                                    <td><span className="badge badge-success">Pagado</span></td>
                                     <td>28-12-2019</td>
                                     <td>$80.000</td>
                                     <td></td>

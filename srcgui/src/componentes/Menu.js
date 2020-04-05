@@ -9,7 +9,7 @@ function Menu() {
     return (
         <div className="container">
             <header>
-                <nav className="navbar navbar-expand-md navbar-dark fixed-top rounded-bottom" style={{ background: "#45B649", background: "-webkit-linear-gradient(to right, #45B649, #DCE35B)", background: "linear-gradient(to right, #45B649, #DCE35B)" }}>
+                <nav className="navbar navbar-expand-md navbar-dark fixed-top rounded-bottom" style={{ background: "linear-gradient(to right, #45B649, #DCE35B)" }}>
 
                     <Link to="/" className="navbar-header">
                         <img className="img-responsive" src="../imagenes/imagotipo.png" style={{ height: '60px', width: 'auto', maxWidth: '200px' }} />

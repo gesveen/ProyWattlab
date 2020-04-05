@@ -3,9 +3,11 @@ import {updateObject} from '../utility';
 
 
 const initialState ={
+    auth: {
     token:null, 
     error: null,
     loading: false
+    }
 }
 
 

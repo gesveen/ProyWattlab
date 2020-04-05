@@ -1,30 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import 'antd/dist/antd.css';
 
-import BaseRouter from './routes'; 
-
-import { connect } from 'react-redux';
-import * as actions from './store/actions/auth';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import BaseRouter from './routes';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <BaseRouter/> 
-      </div>
+      <Provider store={store}>
+        <Fragment>
+          <div>
+            <BaseRouter />
+          </div>
+        </Fragment>
+      </Provider>
     );
-  }
-}
-
-const mapStateToProps = state => {
-  return {
-    isAuthenticated: state.token !== null
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    onTryAutoSignUP: () => dispatch(actions.authCheckState())
   }
 }
 

@@ -30,7 +30,7 @@ class MATransformadores extends Component {
                                 <div className="form-row">
                                     <div className="input-group">
                                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                            <input style={{textAlign: "center"}} type="text" readonly class="form-control-plaintext" id="staticEmail2" value="¿Qué desea añadir?"></input>
+                                            <input style={{textAlign: "center"}} type="text" readOnly className="form-control-plaintext" id="staticEmail2" value="¿Qué desea añadir?"></input>
                                         </div>
                                         <div className="col-lg-5 col-md-6 col-sm-6 col-xs-6">
                                             <select className="form-control" id="exampleFormControlSelect1" style={{marginBottom: "10px"}}>

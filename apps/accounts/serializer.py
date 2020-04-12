@@ -1,12 +1,15 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
+from django.contrib.auth import authenticate
+from knox.models import AuthToken
 
+#Usuarios
 class UserSerializer(serializers.ModelSerializer):
     class Meta: 
         model= User
         fields = ('id', 'username', 'first_name', 'last_name', 'email')
 
-
+#Registro de usuarios
 class RegisterSerializer(serializers.Serializer): 
     id = serializers.ReadOnlyField()
     first_name = serializers.CharField()
@@ -33,3 +36,17 @@ class RegisterSerializer(serializers.Serializer):
             raise serializers.ValidationError("Usuarion ya existente")
         else: 
             return data 
+        
+#Login user         
+class LoginSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password= serializers.CharField()
+    
+    def validate(self, data): 
+        user = authenticate(**data)
+        if user is not None and user.is_active: 
+           return user
+        else: serializers.ValidationError("Incorrectos")
+        
+
+    

@@ -1,5 +1,15 @@
 {
       "translation": {
+            "slide1_title": "Energía eléctrica",
+            "slide1_text": "De pura CALIDAD.",
+            "slide2_title": "PARA TODOS LOS CALEÑOS",
+            "slide2_text": "Próximamente...",
+            "slide3_title": "Próximamente...",
+            "slide3_text": "Próximamente...",
+            "news_title": "Noticias y novedades",
+            "news_text": "Aquí va la sección de noticias",
+            "services_title1": "Pensamos en tu comodidad",
+            "services_title2": "Encuentra aquí todos nuestros servicios y transacciones en línea.",
             "login": "Iniciar sesión",
             "login_document":"Número de documento",
             "login_password":"Contraseña",

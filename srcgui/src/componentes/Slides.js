@@ -1,11 +1,11 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Translation } from 'react-i18next'; // Necesario para traducir clases.
+//import { useTranslation } from 'react-i18next';
 import { Carousel } from 'antd';
 import './style/slides.css';
 
 class Slides extends React.Component {
     render() {
-        const i18n = useTranslation();
         return (
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -20,14 +20,21 @@ class Slides extends React.Component {
                     <div class="carousel-item">
                         <img src="../imagenes/slides/Slide1.jpg" class="d-block w-100" alt="..."></img>
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 style={{color: "white"}}>{i18n.t('slide1_title')}</h3>
-                            <p>{i18n.t('slide1_text')}</p>
+                            <Translation>
+                                {(t, { i18n }) => <h3 style={{color: "white"}}>{t('slide1_title')}</h3>}
+                            </Translation>
+
+                            <Translation>
+                                {(t, { i18n }) => <p>{t('slide1_text')}</p>}
+                            </Translation>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="../imagenes/slides/Slide0.jpg" class="d-block w-100" alt="..."></img>
                         <div class="carousel-caption d-none d-md-block d-xs-block">
-                            <h1 style={{fontWeight: "bold"}}>{i18n.t('slide2_title')}</h1>
+                            <Translation>
+                                {(t, { i18n }) => <h1 style={{fontWeight: "bold"}}>{t('slide2_title')}</h1>}
+                            </Translation>
                         </div>
                     </div>
                 </div>
@@ -43,5 +50,4 @@ class Slides extends React.Component {
         );
     }
 }
-
 export default Slides;

@@ -1,14 +1,16 @@
-import React from 'react'
-import CardNoticia from '../componentes/CardNoticia'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import CardNoticia from '../componentes/CardNoticia';
 
 function Noticias() {
+    const i18n = useTranslation();
     return (
         <div className="container" style={{ marginTop: '15px', marginBottom: "20px", textAlign: "center"}}>
             <div style={{marginBottom: "20px", marginTop: "20px"}}>
-                <h1>Noticias y novedades</h1>
+                <h1>{i18n.t('news_title')}</h1>
             </div>
             <div>
-                <p>Aquí va la sección de noticias</p>
+                <p>{i18n.t('news_text')}</p>
             </div>
         </div>
     )

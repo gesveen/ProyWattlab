@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Translation } from 'react-i18next'; // Necesario para traducir clases.
+//import { useTranslation } from 'react-i18next';
 import Card from '../componentes/Card.js';
 
 class Servicio extends Component {
@@ -6,8 +8,13 @@ class Servicio extends Component {
         return (
             <div className="container" style={{ marginTop: '15px', marginBottom: "20px", textAlign: "center"}}>
                 <div style={{marginBottom: "20px", marginTop: "20px"}}>
-                    <h1>Pensamos en tu comodidad</h1>
-                    <h4>Encuentra aquí todos nuestros servicios y transacciones en línea.</h4>
+                    <Translation>
+                        {(t, { i18n }) => <h1>{t('services_title1')}</h1>}
+                    </Translation>
+                    
+                    <Translation>
+                        {(t, { i18n }) => <h4>{t('services_title2')}</h4>}
+                    </Translation>
                 </div>
                 <div className="row">
 
@@ -38,5 +45,4 @@ class Servicio extends Component {
         )
     }
 }
-
 export default Servicio;
